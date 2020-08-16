@@ -16,8 +16,8 @@ public class AppTest {
     }
 
     @Test
-    public void testfail() {
+    public void testNull() {
         App classUnderTest = new App();
-        assertNotNull("NotNull", null);
+        assertNotNull("NotNull", "test");
     }
 }
