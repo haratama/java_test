@@ -6,9 +6,18 @@ package java_test;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import javax.lang.model.type.NullType;
+
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+    @Test
+    public void testAppHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    }
+
+    @Test
+    public void testfail() {
+        App classUnderTest = new App();
+        assertNotNull("NotNull", null);
     }
 }
