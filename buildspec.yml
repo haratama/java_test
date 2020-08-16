@@ -6,4 +6,4 @@ phases:
       - gradle -v 
   build: 
     commands: 
-      - gradle war 
+      - gradle test
