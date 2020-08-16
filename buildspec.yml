@@ -6,4 +6,6 @@ phases:
       - gradle -v 
   build: 
     commands: 
+      - gradle clean
+      - gradle assemble
       - gradle test
