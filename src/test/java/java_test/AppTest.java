@@ -15,9 +15,9 @@ public class AppTest {
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
 
-    // @Test
-    // public void testfail() {
-    // App classUnderTest = new App();
-    // assertNotNull("NotNull", null);
-    // }
+    @Test
+    public void testfail() {
+        App classUnderTest = new App();
+        assertNotNull("NotNull", null);
+    }
 }
