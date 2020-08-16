@@ -2,10 +2,12 @@ version: 0.2
 
 phases: 
   install: 
-    commands:  
+    commands: 
+      - java -version 
       - gradle -v 
   build: 
     commands: 
       - gradle clean
       - gradle assemble
       - gradle test
+      - gradle build
