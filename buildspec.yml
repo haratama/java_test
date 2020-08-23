@@ -14,8 +14,8 @@ batch:
         variables:
           MY_VAR:
             - java_test.AppTest
-            - VALUE2
-            - VALUE3
+            - java_test.AppTest2
+            - java_test.AppTest3
 
 phases: 
   install: 
