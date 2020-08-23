@@ -38,5 +38,5 @@ artifacts:
 reports:
   report-name-or-arn:
     files:
-      - build/test-results
-    base-directory: test
+      - **/*
+    base-directory: build/test-results/
