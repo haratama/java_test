@@ -13,7 +13,7 @@ batch:
           ## - aws/codebuild/windows-base:2.0
         variables:
           MY_VAR:
-            - VALUE1
+            - java_test.AppTest
             - VALUE2
             - VALUE3
 
@@ -29,5 +29,5 @@ phases:
       - gradle clean
       - gradle assemble
       #- gradle test
-      - gradle test --tests="org.xxx.xx.Test"
+      - gradle test --tests="$MY_VAR"
       #- gradle build
