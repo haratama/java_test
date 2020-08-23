@@ -28,6 +28,6 @@ phases:
       - echo $MY_VAR
       - gradle clean
       - gradle assemble
-      - gradle test
-      gradle test --tests="org.xxx.xx.Test"
+      #- gradle test
+      - gradle test --tests="org.xxx.xx.Test"
       #- gradle build
